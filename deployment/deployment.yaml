@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: hello-world
 spec:
-  replicas: 5
+  replicas: 3
   selector:
     matchLabels:
       app: hello-world
@@ -19,11 +19,11 @@ spec:
         - containerPort: 5000
         resources:
           requests:
-            cpu: 50m
-            memory: 90Mi
+            cpu: 200m
+            memory: 300Mi
           limits: 
-            cpu: 50m
-            memory: 90Mi
+            cpu: 200m
+            memory: 300Mi
 
 
 
